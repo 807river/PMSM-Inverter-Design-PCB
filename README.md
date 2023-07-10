@@ -8,6 +8,7 @@
 ## 3.逆变器控制部分
 ## 4.原理图绘制
 
-## The softwares used during design are Altium Designer, Code Composer Studio.
-<p>Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
+## 2.使用的软件
+<p>The softwares used during design are Altium Designer, Code Composer Studio.<br>
+Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
 Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
