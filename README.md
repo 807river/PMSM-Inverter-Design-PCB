@@ -1,7 +1,6 @@
 # PMSM-Inverter-Design-PCB 
 <p>Documenting the progress of an attempt to design an inverter for a permanent magnet synchronous motor (three-phase).<br>
 记录尝试设计永磁同步电机（三相）的逆变器的进展，希望能成功！（写的很乱，中英混杂，最后再整理吧）</p>
-<br>
 <hr>
 
 # Content目录
@@ -27,7 +26,6 @@
     </ul>
   <li><a href="#4原理图绘制">4原理图绘制</a></li>
 </ul>
-<br>
 <hr>
 
 ## 1背景知识
@@ -49,8 +47,7 @@
 
 ### 14磁场定向控制
 
-  <br>
-  <hr>
+<hr>
   
 ## 2使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.</p>
@@ -63,7 +60,6 @@
 
 <p>Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
 
-<br>
 <hr>
 
 ## 3逆变器DSP控制部分
@@ -76,9 +72,8 @@
 
 ### 34电源
 
-<br>
 <hr>
 
 ## 4原理图绘制
 
-
+<hr>
