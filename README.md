@@ -19,7 +19,8 @@
 <hr>
 
 ## 前期背景知识储备
-<p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。
+
+<p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。</p>
   
 ### 永磁同步电机的基本结构
 
