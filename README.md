@@ -18,7 +18,7 @@
 </ol>
 <hr>
 
-## <ol><li>前期背景知识储备</li>
+## <ol><li>前期背景知识储备
 
 <p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。</p>
   
@@ -39,7 +39,7 @@
   <br>
   <hr>
   
-## 2. 使用的软件
+## <ol><li>2. 使用的软件</li></ol>
 <p>The softwares used during design are Altium Designer, Code Composer Studio.<br>
 Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
 Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
