@@ -8,6 +8,9 @@
 ## 3.逆变器控制部分
 ## 4.原理图绘制
 
+# 1.前期背景知识储备
+<p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。<br>
+
 ## 2.使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.<br>
 Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
