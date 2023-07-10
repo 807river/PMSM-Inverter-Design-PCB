@@ -5,12 +5,12 @@
 
 # Content目录
 <ol>
-  <li><a href="#前期背景知识储备">前期背景知识储备</a> </li>
+  <li><a href="# 1.前期背景知识储备">1. 前期背景知识储备</a> </li>
     <ol>
-      <li><a href="#永磁同步电机的基本结构">永磁同步电机的基本结构</a></li>
-      <li><a href="#几种常见坐标系">几种常见坐标系</a></li>
-      <li><a href="#空间脉宽调制技术">空间脉宽调制技术</a></li>
-      <li><a href="#磁场定向控制">磁场定向控制</a></li>
+      <li><a href="# 1.1. 永磁同步电机的基本结构">1.1. 永磁同步电机的基本结构</a></li>
+      <li><a href="# 1.2. 几种常见坐标系">1.2. 几种常见坐标系</a></li>
+      <li><a href="# 1.3. 空间脉宽调制技术">1.3. 空间脉宽调制技术</a></li>
+      <li><a href="# 1.4. 磁场定向控制">1.4. 磁场定向控制</a></li>
     </ol>
   <li><a href="#使用的软件">使用的软件</a></li>
   <li><a href="#逆变器控制部分">逆变器控制部分</a></li>
@@ -18,7 +18,7 @@
 </ol>
 <hr>
 
-## 前期背景知识储备
+## 1. 前期背景知识储备
 
 <p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。</p>
   
@@ -39,7 +39,11 @@
   <br>
   <hr>
   
-## 使用的软件
+## 2. 使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.<br>
 Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
 Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
+
+## 3. 逆变器控制部分
+
+## 4. 原理图绘制
