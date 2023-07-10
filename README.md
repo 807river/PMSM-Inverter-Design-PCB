@@ -14,7 +14,7 @@
     </ul>
   <li><a href="#2使用的软件">2使用的软件</a></li>
     <ul>
-      <li><a href="#21-.-Altium-Designer">21 . Altium Designer</a></li>
+      <li><a href="#21.-Altium-Designer">21. Altium Designer</a></li>
       <li><a href="#22Code-Composer-Studio">22Code Composer Studio</a></li>
     </ul>
   <li><a href="#3逆变器控制部分">3逆变器控制部分</a></li>
