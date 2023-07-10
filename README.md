@@ -13,8 +13,8 @@
       <li><a href="#1.4-磁场定向控制">1.4 磁场定向控制</a></li>
     </ul>
   <li><a href="#2使用的软件">2使用的软件</a></li>
-  <li><a href="#3. 逆变器控制部分">3. 逆变器控制部分</a></li>
-  <li><a href="#4.原理图绘制">4.原理图绘制</a></li>
+  <li><a href="#3逆变器控制部分">3逆变器控制部分</a></li>
+  <li><a href="#4原理图绘制">4原理图绘制</a></li>
 </ul>
 <hr>
 
@@ -40,14 +40,14 @@
   <br>
   <hr>
   
-## 2. 使用的软件
+## 2使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.<br>
 Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
 Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
 
-## 3. 逆变器控制部分
+## 3逆变器控制部分
 
-## 4. 原理图绘制
+## 4原理图绘制
 
 1. First item
 2. Second item
