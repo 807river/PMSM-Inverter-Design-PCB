@@ -36,7 +36,7 @@
 
 <p>永磁同步电机主要由定子和转子构成。定子包括三相绕组及铁心，电枢绕组常以Y型连接。转子结构有外转子结构，内转子结构。<br>
 永磁同步电机的模式如下所示
-  <img src="XX" />
+  <img src="[XX](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/f0466dce-2d20-4954-bf52-aa474a5de13b)" />
 </p>
 
 ### 12几种常见坐标系
