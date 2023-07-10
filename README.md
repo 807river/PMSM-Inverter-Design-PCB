@@ -25,6 +25,7 @@
       <li><a href="#34电源">34电源</a></li>
     </ul>
   <li><a href="#4原理图绘制">4原理图绘制</a></li>
+  <li><a href="#Reference">Reference</a></li>
 </ul>
 <hr>
 
@@ -85,6 +86,9 @@
 ### 33保护电路
 
 ### 34电源
+
+## Reference:
+[1] Zhao, Xiaokun, Baoquan Kou, Changchuang Huang, and Lu Zhang. 2022. "Optimization Design and Performance Analysis of a Reverse-Salient Permanent Magnet Synchronous Motor" Machines 10, no. 3: 204. https://doi.org/10.3390/machines10030204
 
 <hr>
 
