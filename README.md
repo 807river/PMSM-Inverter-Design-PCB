@@ -7,13 +7,13 @@
 <ul>
   <li><a href="#1背景知识">1背景知识</a> </li>
     <ul>
-      <li><a href="#1.1-永磁同步电机的基本结构">1.1 永磁同步电机的基本结构</a></li>
+      <li><a href="#1.1永磁同步电机的基本结构">1.1永磁同步电机的基本结构</a></li>
       <li><a href="#1.2-几种常见坐标系">1.2 几种常见坐标系</a></li>
       <li><a href="#1.3-空间脉宽调制技术">1.3 空间脉宽调制技术</a></li>
       <li><a href="#1.4-磁场定向控制">1.4 磁场定向控制</a></li>
     </ul>
   <li><a href="#2使用的软件">2使用的软件</a></li>
-  <li><a href="#3.逆变器控制部分">3.逆变器控制部分</a></li>
+  <li><a href="#3. 逆变器控制部分">3. 逆变器控制部分</a></li>
   <li><a href="#4.原理图绘制">4.原理图绘制</a></li>
 </ul>
 <hr>
@@ -22,7 +22,7 @@
 
 <p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。</p>
   
-### 1.1 永磁同步电机的基本结构
+### 1.1永磁同步电机的基本结构
 
 <p>永磁同步电机主要由定子和转子构成。定子包括三相绕组及铁心，电枢绕组常以Y型连接。转子结构有外转子结构，内转子结构。<br>
 永磁同步电机的模式如下所示
@@ -48,3 +48,8 @@ Code Composer Studio is a software development tool for DSP. It could be got fro
 ## 3. 逆变器控制部分
 
 ## 4. 原理图绘制
+
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
