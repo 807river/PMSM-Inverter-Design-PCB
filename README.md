@@ -13,6 +13,10 @@
       <li><a href="#14磁场定向控制">14磁场定向控制</a></li>
     </ul>
   <li><a href="#2使用的软件">2使用的软件</a></li>
+    <ul>
+      <li><a href="21Altium-Designer">21Altium Designer</a></li>
+      <li><a href="22Code-Composer-Studio">22Code Composer Studio</a></li>
+    </ul>
   <li><a href="#3逆变器控制部分">3逆变器控制部分</a></li>
   <li><a href="#4原理图绘制">4原理图绘制</a></li>
 </ul>
@@ -41,15 +45,18 @@
   <hr>
   
 ## 2使用的软件
-<p>The softwares used during design are Altium Designer, Code Composer Studio.<br>
-Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
-Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
+<p>The softwares used during design are Altium Designer, Code Composer Studio.</p>
+
+### 21Altium Designer
+
+<p>Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
+
+### 22Code Composer Studio
+
+<p>Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
 
 ## 3逆变器控制部分
 
 ## 4原理图绘制
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+
