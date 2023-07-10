@@ -39,6 +39,7 @@
 <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/f0466dce-2d20-4954-bf52-aa474a5de13b" width="200px" height="200px" />
 </p>
 <p align="center"> Figure 1 永磁同步电机模型及坐标示意图</p>
+
 ### 12几种常见坐标系
 
 <p>永磁同步电机的数学模型有</p>
