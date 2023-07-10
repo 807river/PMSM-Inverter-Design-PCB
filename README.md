@@ -14,8 +14,8 @@
     </ul>
   <li><a href="#2使用的软件">2使用的软件</a></li>
     <ul>
-      <li><a href="#Altium-Designer">Altium Designer</a></li>
-      <li><a href="#Code-Composer-Studio">Code Composer Studio</a></li>
+      <li><a href="#21Altium-Designer">21Altium Designer</a></li>
+      <li><a href="#22Code-Composer-Studio">22Code Composer Studio</a></li>
     </ul>
   <li><a href="#3逆变器DSP控制部分">3逆变器DSP控制部分</a></li>
     <ul>
@@ -52,13 +52,13 @@
 ## 2使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.</p>
 
-  - Altium Designer
+### Altium Designer
     
-    - <p>Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
+<p>Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
     
-  - 22Code Composer Studio
-    
-    - <p>Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
+### 22Code Composer Studio
+
+<p>Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
 
 <hr>
 
