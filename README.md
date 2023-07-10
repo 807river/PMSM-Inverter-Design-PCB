@@ -52,13 +52,13 @@
 ## 2使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.</p>
 
-### 21Altium Designer
+  - Altium Designer
 
-<p>Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
+    - <p>Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
 
-### 22Code Composer Studio
+  - 22Code Composer Studio
 
-<p>Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
+    - <p>Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
 
 <hr>
 
