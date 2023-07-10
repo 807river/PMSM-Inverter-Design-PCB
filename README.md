@@ -36,11 +36,16 @@
 ### 11永磁同步电机的基本结构
 
 <p>永磁同步电机主要由定子和转子构成。定子包括三相绕组及铁心，电枢绕组常以Y型连接。转子结构有外转子结构，内转子结构。<br>
-永磁同步电机的模式如Figure 1[^1]:所示。
+  
+永磁同步电机的模式如Figure 1[^1] 所示。
+  
   <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/214cb3f2-475f-4501-b92a-5a21bc897fa9" width="200px" height="200px" />
   </p>
+  
 <p align="center"> Figure 1 永磁同步电机模型及坐标示意图</p>
+
 永磁同步电机的模型及坐标示意图如Figure 2所示。
+
   <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/f0466dce-2d20-4954-bf52-aa474a5de13b" width="200px" height="200px" />
   </p>
 <p align="center"> Figure 2 永磁同步电机模型及坐标示意图</p>
@@ -98,4 +103,5 @@
 <hr>
 
 ## Reference:
+
 [^1]: Zhao, Xiaokun, Baoquan Kou, Changchuang Huang, and Lu Zhang. 2022. "Optimization Design and Performance Analysis of a Reverse-Salient Permanent Magnet Synchronous Motor" Machines 10, no. 3: 204. https://doi.org/10.3390/machines10030204
