@@ -19,9 +19,14 @@
 <hr>
 
 ## 前期背景知识储备
-<p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。<br>
-<hr>
-
+<p>本文提及的永磁同步电机为三相。Permanent Magnet Synchronous Motor (PMSM)，永磁同步电机。
+### 永磁同步电机的基本结构
+### 永磁同步电机的数学模型
+### 空间脉宽调制技术
+### 磁场定向控制
+  <br>
+  <hr>
+  
 ## 使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.<br>
 Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.<br>
