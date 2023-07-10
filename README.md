@@ -17,7 +17,13 @@
       <li><a href="#21Altium-Designer">21Altium Designer</a></li>
       <li><a href="#22Code-Composer-Studio">22Code Composer Studio</a></li>
     </ul>
-  <li><a href="#3逆变器控制部分">3逆变器控制部分</a></li>
+  <li><a href="#3逆变器DSP控制部分">3逆变器DSP控制部分</a></li>
+    <ul>
+      <li><a href="#31PWM信号驱动电路">31PWM信号驱动电路</a></li>
+      <li><a href="#32检测电路">32检测电路</a></li>
+      <li><a href="#33保护电路">33保护电路</a></li>
+      <li><a href="#34电源">34电源</a></li>
+    </ul>
   <li><a href="#4原理图绘制">4原理图绘制</a></li>
 </ul>
 <hr>
@@ -55,7 +61,15 @@
 
 <p>Code Composer Studio is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
 
-## 3逆变器控制部分
+## 3逆变器DSP控制部分
+
+### 31PWM信号驱动电路
+
+### 32检测电路
+
+### 33保护电路
+
+### 34电源
 
 ## 4原理图绘制
 
