@@ -47,7 +47,7 @@
 ## 2使用的软件
 <p>The softwares used during design are Altium Designer, Code Composer Studio.</p>
 
-### 21. Altium Designer
+### 21Altium Designer
 
 <p>Altium Designer is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
 
