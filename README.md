@@ -1,6 +1,7 @@
 # PMSM-Inverter-Design-PCB 
 <p>Documenting the progress of an attempt to design an inverter for a permanent magnet synchronous motor (three-phase).<br>
-记录尝试设计永磁同步电机（三相）的逆变器的进展，希望能成功！（写的很乱，中英混杂，最后再整理吧）</p>
+记录尝试设计永磁同步电机（三相）的逆变器的进展，希望能成功！（写的很乱，中英混杂，最后再整理吧）<br>
+走过路过，给个星星支持一下吧~</p>
 <hr>
 
 # Content目录
