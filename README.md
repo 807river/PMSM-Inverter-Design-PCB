@@ -60,7 +60,9 @@
 ### 14磁场定向控制 Field Oriented Control
 
 <p>永磁同步电机的控制策略主要有：<br>
+  
   - 恒压频比控制又称变压变频控制，Variable Voltage Variable Frequency (VVVF)；
+    
   - 磁场定向矢量控制，Field Oriented Control (FOC)；
   - 直接转矩控制，Direct Torque Control (DTC)。</p>
 
