@@ -62,7 +62,6 @@
 <p>永磁同步电机的控制策略主要有：<br>
   
   - 恒压频比控制又称变压变频控制，Variable Voltage Variable Frequency (VVVF)；
-    
   - 磁场定向矢量控制，Field Oriented Control (FOC)；
   - 直接转矩控制，Direct Torque Control (DTC)。</p>
 
@@ -74,7 +73,6 @@
       其中，F_s为定子频率，N_s为定子每相绕组串联匝数，K_ns为基波绕组系数，ɸ_m为气隙磁通有效值。
       F_s,N_s,K_ns为常值，则E_m与Fs成正比。
       可以粗略理解为，VVVF的基本控制原则是控制气隙磁通有效值ɸ_m恒定不变。
-  
   - FOC是用坐标变换将三相交流电的控制，转换为 **产生转矩的q轴电流** 和 **产生磁场的d轴电流** 的控制，实现转矩和励磁的独立控制[^3]。
      从Figure 2可知，
   
