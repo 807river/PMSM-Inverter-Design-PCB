@@ -64,8 +64,7 @@
   - ![alpha-beta坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/6c9e272f-cf1b-4428-a4f6-bfd5fee88292)
   <p align="center"> Figure 4 ɑ-β坐标系</p>
   
-<p> 如Figure 3和Figure 4所示,**A-B-C坐标系**和**ɑ-β坐标系**都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。
-</p>
+如Figure 3和Figure 4所示,**A-B-C坐标系**和**ɑ-β坐标系**都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。
 
   - ![dq坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/43932937-7d22-446f-beef-7bcdc6edf43d)
   <p align="center"> Figure 5 d-q坐标系</p>
