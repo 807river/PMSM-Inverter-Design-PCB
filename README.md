@@ -64,10 +64,12 @@
   
   - 将三相系统的时域分量（A-B-C坐标系）转换为正交静止坐标系（ɑ-β坐标系），称为Clarke变换。
   - 将正交静止坐标系的两个分量转换为一个正交旋转坐标系，称为Park变换。
-    https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/b354ac18-5503-4e8e-8b97-5facec979190
-    <p align="center"> Figure 3 A-B-C坐标系
-  
 </p>
+  
+https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/b354ac18-5503-4e8e-8b97-5facec979190
+<p align="center"> Figure 3 A-B-C坐标系</p>
+  
+
 
 ### 13空间脉宽调制技术
 
