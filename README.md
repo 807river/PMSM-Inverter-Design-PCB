@@ -71,11 +71,10 @@
   
 而Figure 5所示的**d-q坐标系**是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以**d-q坐标系**与永磁同步电机相对转动。
 
-<p> 为了将交流电流和电压波形转换为直流信号，常连续采用Clarke变换和Park变换去实现[^2]。<br>
+为了将交流电流和电压波形转换为直流信号，常连续采用Clarke变换和Park变换去实现[^2]。<br>
   
   - 将三相系统的时域分量（A-B-C坐标系）转换为正交静止坐标系（ɑ-β坐标系），称为Clarke变换。
   - 将正交静止坐标系的两个分量转换为一个正交旋转坐标系，称为Park变换。
-</p>
 
 ### 13几种常见的控制方法 VVVF FOC DTC
 
@@ -147,5 +146,7 @@
 ## Reference:
 
 [^1]: Zhao, Xiaokun, Baoquan Kou, Changchuang Huang, and Lu Zhang. 2022. "Optimization Design and Performance Analysis of a Reverse-Salient Permanent Magnet Synchronous Motor" Machines 10, no. 3: 204. https://doi.org/10.3390/machines10030204
+
 [^2]: https://ww2.mathworks.cn/solutions/electrification/clarke-and-park-transforms.html
+
 [^3]: https://blog.csdn.net/weixin_48005998/article/details/129597108?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&utm_relevant_index=12
