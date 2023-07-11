@@ -57,7 +57,26 @@
 
 ### 13空间脉宽调制技术
 
-### 14磁场定向控制
+### 14磁场定向控制 Field Oriented Control
+
+<p>永磁同步电机的控制策略主要有：<br>
+  - 恒压频比控制又称变压变频控制，Variable Voltage Variable Frequency (VVVF)；<br>
+  - 磁场定向矢量控制，Field Oriented Control (FOC);<br>
+  - 直接转矩控制，Direct Torque Control (DTC)。</p>
+
+<p>三种控制方法都是为了获得好的调速控制性能。<br>
+  
+  - VVVF的原理是利用**”V/F=定值“**的原理，用开环控制的方法控制电机[^2]。
+      根据电磁感应原理，气隙磁通在定子绕组每相绕组中的感应电动势E_m可以表示为：
+      E_m=4.44*F_s*N_s*K_ns*ɸ_m
+      其中，F_s为定子频率，N_s为定子每相绕组串联匝数，K_ns为基波绕组系数，ɸ_m为气隙磁通有效值。
+      F_s,N_s,K_ns为常值，则E_m与Fs成正比。
+      可以粗略理解为，VVVF的基本控制原则是控制气隙磁通有效值ɸ_m恒定不变。
+  
+  - FOC是用坐标变换将三相交流电的控制，转换为**产生转矩的q轴电流**和**产生磁场的d轴电流**的控制，实现转矩和励磁的独立控制[^3]。
+     从Figure 2可知，
+  
+  - DTC是
 
 <hr>
   
@@ -106,3 +125,4 @@
 ## Reference:
 
 [^1]: Zhao, Xiaokun, Baoquan Kou, Changchuang Huang, and Lu Zhang. 2022. "Optimization Design and Performance Analysis of a Reverse-Salient Permanent Magnet Synchronous Motor" Machines 10, no. 3: 204. https://doi.org/10.3390/machines10030204
+[^2]: https://blog.csdn.net/weixin_48005998/article/details/129597108?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&utm_relevant_index=12
