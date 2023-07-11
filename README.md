@@ -10,8 +10,8 @@
     <ul>
       <li><a href="#11永磁同步电机的基本结构">11永磁同步电机的基本结构</a></li>
       <li><a href="#12几种常见坐标系">12几种常见坐标系</a></li>
-      <li><a href="#13几种常见的控制方法VVVF,FOC,DTC">13几种常见的控制方法VVVF,FOC,DTC</a></li>
-      <li><a href="#14空间脉宽调制技术">14空间脉宽调制技术</a></li>
+      <li><a href="#13几种常见的控制方法-VVVF,FOC,DTC">13几种常见的控制方法VVVF,FOC,DTC</a></li>
+      <li><a href="#14空间脉宽调制技术-SVPWM">14空间脉宽调制技术 SVPWM</a></li>
     </ul>
   <li><a href="#2使用的软件">2使用的软件</a></li>
     <ul>
