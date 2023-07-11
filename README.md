@@ -66,8 +66,7 @@
   - 将正交静止坐标系的两个分量转换为一个正交旋转坐标系，称为Park变换。
 </p>
   
-<p align="center"> 
-  https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/b354ac18-5503-4e8e-8b97-5facec979190
+<p align="center"> <img src="![abc坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101)">
 </p>
 <p align="center"> Figure 3 A-B-C坐标系</p>
   
