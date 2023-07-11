@@ -64,12 +64,15 @@
   - ![alpha-beta坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/6c9e272f-cf1b-4428-a4f6-bfd5fee88292)
   <p align="center"> Figure 4 ɑ-β坐标系</p>
   
-<p>如Figure 3和Figure 4所示， **A-B-C坐标系** 和 **ɑ-β坐标系** 都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。<br>
-  
+<p>
+  如Figure 3和Figure 4所示， **A-B-C坐标系** 和 **ɑ-β坐标系** 都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。
+</p>
+
   - ![dq坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/43932937-7d22-446f-beef-7bcdc6edf43d)
   <p align="center"> Figure 5 d-q坐标系</p>
   
-<p>而Figure 5所示的 **d-q坐标系** 是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以 **d-q坐标系** 与永磁同步电机相对转动。
+<p>
+  而Figure 5所示的 **d-q坐标系** 是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以 **d-q坐标系** 与永磁同步电机相对转动。
 </p>
 
 <p> 为了将交流电流和电压波形转换为直流信号，常连续采用Clarke变换和Park变换去实现[^2]。<br>
