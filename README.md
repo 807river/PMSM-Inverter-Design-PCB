@@ -47,8 +47,6 @@
 
 ### 12几种常见坐标系 ABC ɑβ dq
 
-<p>永磁同步电机的数学模型有</p>
-
 永磁同步电机的模型及坐标示意图如Figure 2所示。
 
   <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/f0466dce-2d20-4954-bf52-aa474a5de13b" width="200px" height="200px" />
