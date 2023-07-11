@@ -56,8 +56,19 @@
 <p align="center"> Figure 2 永磁同步电机模型及坐标示意图</p>
 
 <p>为什么要针对永磁同步电机建立坐标系呢？是为了更精确的调速调频，为了研究精确的控制算法。<br>
-  Figure 1中电机定子的三相绕组两两之间夹角为120°。可以观察到， **A-B-C坐标系** 和 **ɑ-β坐标系** 都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。<br>
-  而 **d-q坐标系** 是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以 **d-q坐标系** 与永磁同步电机相对转动。
+  Figure 1中电机定子的三相绕组两两之间夹角为120°。</p>
+
+  ![abc坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101)
+  <p align="center"> Figure 3 A-B-C坐标系</p>
+
+ ![alpha-beta坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/6c9e272f-cf1b-4428-a4f6-bfd5fee88292)
+  <p align="center"> Figure 4 ɑ-β坐标系</p>
+
+![dq坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/43932937-7d22-446f-beef-7bcdc6edf43d)
+  <p align="center"> Figure 5 d-q坐标系</p>
+  
+<p>如Figure 3和Figure 4所示， **A-B-C坐标系** 和 **ɑ-β坐标系** 都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。<br>
+  而Figure 5所示的 **d-q坐标系** 是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以 **d-q坐标系** 与永磁同步电机相对转动。
 </p>
 
 <p> 为了将交流电流和电压波形转换为直流信号，常连续采用Clarke变换和Park变换去实现[^2]。<br>
@@ -65,12 +76,6 @@
   - 将三相系统的时域分量（A-B-C坐标系）转换为正交静止坐标系（ɑ-β坐标系），称为Clarke变换。
   - 将正交静止坐标系的两个分量转换为一个正交旋转坐标系，称为Park变换。
 </p>
-  
-![abc坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101)
-<iframe src="![abc坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101)" allowfullscreen></iframe>
-<p align="center"> Figure 3 A-B-C坐标系</p>
-  
-
 
 ### 13空间脉宽调制技术
 
