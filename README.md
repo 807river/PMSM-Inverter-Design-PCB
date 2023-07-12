@@ -97,7 +97,14 @@
 
 ### 14空间脉宽调制技术 SVPWM
 
-空间脉宽调制法，Space Vector Pulse Width Modulation (SVPWM)。这种技术可以控制三相逆变桥的六个IGBT元件瞬时开关的状态，产生特定的脉宽调制波，可以使电机获得理想圆形磁链轨迹，输出理想的正弦电流波形。
+  - 脉冲宽度调制，Pulse Width Modulation (PWM)。PWM可以将模拟信号变换为脉冲，且变换后的脉冲周期可以根据模拟信号大小的改变而改变。<br>
+    PWM技术实现的基本原理是面积等效原理，即冲量相等而形状不同的窄脉冲加在具有惯性的环节上时，其效果基本相同。
+    
+  - 正弦脉宽调制，Sinusoidal Pulse Width Modulation (SPWM)。正弦脉宽调制法是将每一个正弦周期内的多个脉冲作规律的脉宽调制。<br>
+    SPWM也是基于PWM实现的，输入一段幅值相等的脉冲序列去等效正弦波，输出的脉冲时间宽度基本符合正弦变化。常用的采样方法有：自然采样法和规则采样法[^4]。
+    
+  - 空间脉宽调制法，Space Vector Pulse Width Modulation (SVPWM)。这种技术是基于平均值等效原理，即在一个开关周期内通过对基本电压矢量加以组合，使其平均值与给定电压适量相等。可以理解为，在某个时刻，电压矢量旋转到某个区域中，可以由组成这个区域的两个相邻的非零矢量和零矢量在时间上的不同组合来得到。两个矢量的作用时间在一个采样周期内分多次施加，可以控制各个电压矢量的作用时间，使电压空间矢量接近圆轨迹旋转。通过逆变器的不同开关状态所产生的实际磁通去逼近理想磁通圆，并由两者的比较结果来决定逆变器的开关状态，从而形成PWM波形[^5]。<br>
+    在本文的实际应用就是控制三相逆变桥的六个IGBT元件瞬时开关的状态，产生特定的脉宽调制波，可以使电机获得理想圆形磁链轨迹，输出理想的正弦电流波形。
 <hr>
   
 ## 2使用的软件
@@ -158,3 +165,7 @@
 [^2]: https://ww2.mathworks.cn/solutions/electrification/clarke-and-park-transforms.html
 
 [^3]: https://blog.csdn.net/weixin_48005998/article/details/129597108?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&utm_relevant_index=12
+
+[^4]: https://blog.csdn.net/u010632165/article/details/110889621
+
+[^5]: https://blog.csdn.net/qlexcel/article/details/74787619
