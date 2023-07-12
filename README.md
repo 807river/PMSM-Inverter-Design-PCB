@@ -127,15 +127,14 @@
 
 <p>Code Composer Studio (CCS) is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
 
+#### CCS的简单使用
+
   - 配置开发环境
   - 外部中断
   - ePWM
   - ADC转换
   - DAC转换
   - GPIO
-
-#### CCS的简单使用
-
 <hr>
 
 ## 3逆变器DSP控制部分
