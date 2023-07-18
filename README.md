@@ -149,6 +149,8 @@
 
 ### 31电源
 
+设计供电电源电路的时候，需要考虑到隔离。供电电路为控制系统提供+15V，-15V和+5V的直流电压。设计时供电电路采用两个变压器，分别对控制保护部分和功率模块部分提供电源，其中给功率模块供电变压器的直流输出要分别绕线，不能有公共结点。[^6]
+
 ### 32PWM信号驱动电路
 
 ### 33检测电路
@@ -176,3 +178,5 @@
 [^4]: https://blog.csdn.net/u010632165/article/details/110889621
 
 [^5]: https://blog.csdn.net/qlexcel/article/details/74787619
+
+[^6]: 殷健翔.(2021).基于TMS320F28379D的多电机同步控制策略研究(硕士学位论文,浙江大学).https://kns.cnki.net/kcms2/article/abstract?v=EeZTdI0aL7sEApdvxu7_eJdzvF5UeACxBHVVHwQYb-v2mjYsV5uY0zIVw6BjoFiLQNbu_StuNgwG95GelBflPLa_1nkvRc6mnWqlzehzIfygl22AAjFmP7GPZJmYHFuY69X5igd8qbg=&uniplatform=NZKPT&language=CHS
