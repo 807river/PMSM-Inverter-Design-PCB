@@ -9,9 +9,10 @@
   <li><a href="#1背景知识">1背景知识</a> </li>
     <ul>
       <li><a href="#11永磁同步电机的基本结构">11永磁同步电机的基本结构</a></li>
-      <li><a href="#12几种常见坐标系-ABC-ɑβ-dq">12几种常见坐标系 ABC ɑβ dq</a></li>
-      <li><a href="#13几种常见的控制方法-VVVF-FOC-DTC">13几种常见的控制方法 VVVF FOC DTC</a></li>
-      <li><a href="#14空间脉宽调制技术-PWM-SPWM-SVPWM">14空间脉宽调制技术 PWM SPWM SVPWM</a></li>
+      <li><a href="#12逆变器作用">12逆变器作用</a></li>
+      <li><a href="#13几种常见坐标系-ABC-ɑβ-dq">13几种常见坐标系 ABC ɑβ dq</a></li>
+      <li><a href="#14几种常见的控制方法-VVVF-FOC-DTC">14几种常见的控制方法 VVVF FOC DTC</a></li>
+      <li><a href="#15空间脉宽调制技术-PWM-SPWM-SVPWM">15空间脉宽调制技术 PWM SPWM SVPWM</a></li>
     </ul>
   <li><a href="#2使用的软件">2使用的软件</a></li>
     <ul>
