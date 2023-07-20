@@ -161,7 +161,7 @@
   - 使用TMS320F283xx DSP作为主控制器；
   - 功率器件的开关频率为5kHz，即中断周期为200μs。
 
-设计IGBT驱动电路的时候，需要考虑到信号发生电路，信号隔离电路和驱动电路的设计。<br>
+设计IGBT驱动电路的时候，需要考虑到信号发生电路，信号隔离电路和驱动电路的设计[^8]。<br>
 1)**信号发生电路**<br>
 IGBT一般需要15V的驱动电压，但是控制器能够提供的电压是3.3-5V，所以需要设计信号发生电路使电压满足设计需要。并且信号发生电路要**产生两路带死区互补的方波信号**，否则会造成IGBT的误导通。<br>
 2)**信号隔离电路**<br>
@@ -213,3 +213,5 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 [^6]: https://zh.wikipedia.org/zh-hans/%E9%80%86%E8%AE%8A%E5%99%A8
 
 [^7]: 殷健翔.(2021).基于TMS320F28379D的多电机同步控制策略研究(硕士学位论文,浙江大学).https://kns.cnki.net/kcms2/article/abstract?v=EeZTdI0aL7sEApdvxu7_eJdzvF5UeACxBHVVHwQYb-v2mjYsV5uY0zIVw6BjoFiLQNbu_StuNgwG95GelBflPLa_1nkvRc6mnWqlzehzIfygl22AAjFmP7GPZJmYHFuY69X5igd8qbg=&uniplatform=NZKPT&language=CHS
+
+[^8]: https://blog.csdn.net/weixin_44586889/article/details/109734817
