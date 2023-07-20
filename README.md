@@ -9,7 +9,7 @@
   <li><a href="#1背景知识">1背景知识</a> </li>
     <ul>
       <li><a href="#11永磁同步电机的基本结构">11永磁同步电机的基本结构</a></li>
-      <li><a href="#12逆变器的作用">12逆变器的作用</a></li>
+      <li><a href="#12逆变器的分类">12逆变器的分类</a></li>
       <li><a href="#13几种常见坐标系-ABC-ɑβ-dq">13几种常见坐标系 ABC ɑβ dq</a></li>
       <li><a href="#14几种常见的控制方法-VVVF-FOC-DTC">14几种常见的控制方法 VVVF FOC DTC</a></li>
       <li><a href="#15空间脉宽调制技术-PWM-SPWM-SVPWM">15空间脉宽调制技术 PWM SPWM SVPWM</a></li>
@@ -41,12 +41,11 @@
   
 永磁同步电机的模式如Figure 1[^1] 所示。
   
-  <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/214cb3f2-475f-4501-b92a-5a21bc897fa9" width="360px" height="208px" />
-  </p>
+  <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/310a8e6c-6858-4820-bb41-7a0f8963d9dd" width="360px" height="208px" />  </p>
   
 <p align="center"> Figure 1 永磁同步电机模型及坐标示意图</p>
 
-### 12逆变器的作用
+### 12逆变器的分类
 
 在工业应用中，常常遇到需要将直流电转化为交流电的情况，逆变器Inverter便可以实现这样的功能。比如在电动汽车中，动力电池输出的电是直流电，驱动汽车运动的电机所需要的是三相交流电。<br>
 逆变器的常用分类如下[^2]：
@@ -59,27 +58,31 @@
   | 电路结构 | 半桥电路 | 全桥电路 |
   | 负载性质 | 无源负载 | 有缘负载 |
 
+单相桥式逆变电路的电阻负载简化电路如下所示。
+ <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/310a8e6c-6858-4820-bb41-7a0f8963d9dd" width="360px" height="208px" />
+ <p align="center"> Figure 2 单相桥式逆变电路的电阻负载简化电路</p>
+
 ### 13几种常见坐标系 ABC ɑβ dq
 
 永磁同步电机的模型及坐标示意图如Figure 2所示。
 
   <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/f0466dce-2d20-4954-bf52-aa474a5de13b" width="200px" height="200px" />
   </p>
-<p align="center"> Figure 2 永磁同步电机模型及坐标示意图</p>
+<p align="center"> Figure 3 永磁同步电机模型及坐标示意图</p>
 
 <p>为什么要针对永磁同步电机建立坐标系呢？是为了更精确的调速调频，为了研究精确的控制算法。<br>
   Figure 1中电机定子的三相绕组两两之间夹角为120°。</p>
 
 <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101” width="200px" height="200px" />
-<p align="center"> Figure 3 A-B-C坐标系</p>
+<p align="center"> Figure 4 A-B-C坐标系</p>
 
 <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/6c9e272f-cf1b-4428-a4f6-bfd5fee88292” width="200px" height="200px" />
-<p align="center"> Figure 4 ɑ-β坐标系</p>
+<p align="center"> Figure 5 ɑ-β坐标系</p>
   
 如Figure 3和Figure 4所示，**A-B-C坐标系**和**ɑ-β坐标系**都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。
 
 <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/43932937-7d22-446f-beef-7bcdc6edf43d” width="200px" height="200px" />
-<p align="center"> Figure 5 d-q坐标系</p>
+<p align="center"> Figure 6 d-q坐标系</p>
   
 而Figure 5所示的**d-q坐标系**是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以**d-q坐标系**与永磁同步电机相对转动。
 
@@ -102,7 +105,7 @@
       
   - 磁场定向矢量控制，Field Oriented Control (FOC)；
     FOC是用坐标变换将三相交流电的控制，转换为 **产生转矩的q轴电流** 和 **产生磁场的d轴电流** 的控制，实现转矩和励磁的独立控制[^4]。
-     从Figure 2可知，
+     从Figure 3可知，
     
   - 直接转矩控制，Direct Torque Control (DTC)。
     DTC是通过直接控制定子磁链来直接控制电机的电磁转矩。这种方法不需要转子位置信息和电机的转子参数，省去了复杂的旋转坐标变换。对于永磁同步电机来说，使用这种方法必须已知转子的初始位置。
