@@ -41,8 +41,7 @@
   
 永磁同步电机的模式如Figure 1[^1] 所示。
   
-  <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/310a8e6c-6858-4820-bb41-7a0f8963d9dd" width="360px" height="208px" />  </p>
-  
+  <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/8cacd882-9f5c-4f0d-94cc-4b3d18937321" width="360px" height="208px" />  </p>
 <p align="center"> Figure 1 永磁同步电机模型及坐标示意图</p>
 
 ### 12逆变器的分类
