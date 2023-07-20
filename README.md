@@ -14,17 +14,17 @@
       <li><a href="#14几种常见的控制方法-VVVF-FOC-DTC">14几种常见的控制方法 VVVF FOC DTC</a></li>
       <li><a href="#15空间脉宽调制技术-PWM-SPWM-SVPWM">15空间脉宽调制技术 PWM SPWM SVPWM</a></li>
     </ul>
-  <li><a href="#2使用的软件">2使用的软件</a></li>
+  <li><a href="#2逆变器DSP控制部分">2逆变器DSP控制部分</a></li>
     <ul>
-      <li><a href="#21Altium-Designer">21Altium Designer</a></li>
-      <li><a href="#22Code-Composer-Studio">22Code Composer Studio</a></li>
+      <li><a href="#21电源">21电源</a></li>
+      <li><a href="#22PWM信号驱动电路">22PWM信号驱动电路</a></li>
+      <li><a href="#23检测电路">23检测电路</a></li>
+      <li><a href="#24保护电路">24保护电路</a></li>
     </ul>
-  <li><a href="#3逆变器DSP控制部分">3逆变器DSP控制部分</a></li>
+  <li><a href="#3使用的软件">3使用的软件</a></li>
     <ul>
-      <li><a href="#31电源">31电源</a></li>
-      <li><a href="#32PWM信号驱动电路">32PWM信号驱动电路</a></li>
-      <li><a href="#33检测电路">33检测电路</a></li>
-      <li><a href="#34保护电路">34保护电路</a></li>
+      <li><a href="#31Altium-Designer">31Altium Designer</a></li>
+      <li><a href="#32Code-Composer-Studio">32Code Composer Studio</a></li>
     </ul>
   <li><a href="#4原理图绘制">4原理图绘制</a></li>
   <li><a href="#Reference">Reference</a></li>
@@ -119,39 +119,7 @@
     三相桥式逆变电路类似于全桥逆变电路，但其中有三个桥臂，输出端的三端分别位于三组开关的中点，取两两之间的电压差就可以得到三相电所需的三个相电压。根据三组共六个开关的开通顺序，三相桥式逆变器可以得到一组幅值相等/频率相等/相位相差120°的三相电信号。[^6]
 <hr>
 
-## 2使用的软件
-<p>The softwares used during design are Altium Designer, Code Composer Studio.</p>
-
-### 21Altium Designer
-    
-<p>Altium Designer (AD) is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
-
-#### AD的简单使用
-
-  - 原理图库的创建
-  - 常见原理图库的绘制
-  - 元件的复制，剪切，旋转及镜像
-  - 导线的绘制及导线的属性
-  - 非电气对象（辅助线，文字）的放置
-  - 元器件的位号编号
-  - 检查原理图库的正确性
-  - BOM物料表的导出
-    
-### 22Code Composer Studio
-
-<p>Code Composer Studio (CCS) is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
-
-#### CCS的简单使用
-
-  - 配置开发环境
-  - 外部中断
-  - ePWM
-  - ADC转换
-  - DAC转换
-  - GPIO
-<hr>
-
-## 3逆变器DSP控制部分
+## 2逆变器DSP控制部分
 
 永磁同步电机矢量控制系统基于DSP的实现，拟采用TI公司的DSP芯片。其中F283xx系列DSP是专门设计的电机控制类处理器，配有浮点处理单元，具有计算能力强/外设功能强大等优点。<br>
 对三相交流同步电机矢量控制系统的设计，需要用到ADC采样模块/ePWM等模块。主电路一般采用典型的交-直-交电压源型变频器结构，先将三相交流电整流，再通过电压源型逆变器给电机供电。基于这几个设计条件：<br>
@@ -177,21 +145,49 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 3）全桥电路的器件选型问题。<br>
 全桥电路中每一个器件的选型都需要考虑它的承受值。比如MOS管的选型，在计算最大工作频率是要关注MOS管的上升和下降时间，以保护电路的器件特性。<br>
 
-### 31电源
+### 21电源
 
 设计供电电源电路的时候，需要考虑到隔离。供电电路为控制系统提供+15V，-15V和+5V的直流电压。设计时供电电路采用两个变压器，分别对控制保护部分和功率模块部分提供电源，其中给功率模块供电变压器的直流输出要分别绕线，不能有公共结点[^8]。
 
-### 32PWM信号驱动电路
+### 22PWM信号驱动电路
 
 
-### 33检测电路
+### 23检测电路
 
-### 34保护电路
+### 24保护电路
 
+<hr>
 
+## 3使用的软件
+<p>The softwares used during design are Altium Designer, Code Composer Studio.</p>
 
-电源电路设计的时候，需要考虑到
+### 31Altium Designer
+    
+<p>Altium Designer (AD) is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
 
+#### AD的简单使用
+
+  - 原理图库的创建
+  - 常见原理图库的绘制
+  - 元件的复制，剪切，旋转及镜像
+  - 导线的绘制及导线的属性
+  - 非电气对象（辅助线，文字）的放置
+  - 元器件的位号编号
+  - 检查原理图库的正确性
+  - BOM物料表的导出
+    
+### 32Code Composer Studio
+
+<p>Code Composer Studio (CCS) is a software development tool for DSP. It could be got from https://www.ti.com/tool/CCSTUDIO.</p>
+
+#### CCS的简单使用
+
+  - 配置开发环境
+  - 外部中断
+  - ePWM
+  - ADC转换
+  - DAC转换
+  - GPIO
 <hr>
 
 ## 4原理图绘制
