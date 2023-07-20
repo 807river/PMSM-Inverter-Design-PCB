@@ -49,10 +49,8 @@
 ### 12逆变器的作用
 
 在工业应用中，常常遇到需要将直流电转化为交流电的情况，逆变器Inverter便可以实现这样的功能。比如在电动汽车中，动力电池输出的电是直流电，驱动汽车运动的电机所需要的是三相交流电。<br>
-逆变器的常用分类如下：
+逆变器的常用分类如下[^2]：
 
-<div class="center">
-  
   | 分类标准 | 三相逆变器的细分 | 三相逆变器的细分 |
   | :-: | :-: | :-: |
   | 直流电源性质 | 电压源电路 | 电流源电路 |
@@ -60,8 +58,6 @@
   | 输出相电压的电平数 | 两电平电路 | 多电平电路 |
   | 电路结构 | 半桥电路 | 全桥电路 |
   | 负载性质 | 无源负载 | 有缘负载 |
-
-</div>
 
 ### 13几种常见坐标系 ABC ɑβ dq
 
@@ -87,7 +83,7 @@
   
 而Figure 5所示的**d-q坐标系**是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以**d-q坐标系**与永磁同步电机相对转动。
 
-为了将交流电流和电压波形转换为直流信号，常连续采用Clarke变换和Park变换去实现[^2]。<br>
+为了将交流电流和电压波形转换为直流信号，常连续采用Clarke变换和Park变换去实现[^3]。<br>
   
   - 将三相系统的时域分量（A-B-C坐标系）转换为正交静止坐标系（ɑ-β坐标系），称为Clarke变换。
   - 将正交静止坐标系的两个分量转换为一个正交旋转坐标系，称为Park变换。
@@ -105,7 +101,7 @@
       可以粗略理解为，VVVF的基本控制原则是控制气隙磁通有效值ɸ_m恒定不变。<br>
       
   - 磁场定向矢量控制，Field Oriented Control (FOC)；
-    FOC是用坐标变换将三相交流电的控制，转换为 **产生转矩的q轴电流** 和 **产生磁场的d轴电流** 的控制，实现转矩和励磁的独立控制[^3]。
+    FOC是用坐标变换将三相交流电的控制，转换为 **产生转矩的q轴电流** 和 **产生磁场的d轴电流** 的控制，实现转矩和励磁的独立控制[^4]。
      从Figure 2可知，
     
   - 直接转矩控制，Direct Torque Control (DTC)。
@@ -117,9 +113,9 @@
     PWM技术实现的基本原理是面积等效原理，即冲量相等而形状不同的窄脉冲加在具有惯性的环节上时，其效果基本相同。
     
   - 正弦脉宽调制，Sinusoidal Pulse Width Modulation (SPWM)。正弦脉宽调制法是将每一个正弦周期内的多个脉冲作规律的脉宽调制。<br>
-    SPWM也是基于PWM实现的，输入一段幅值相等的脉冲序列去等效正弦波，输出的脉冲时间宽度基本符合正弦变化。常用的采样方法有：自然采样法和规则采样法[^4]。
+    SPWM也是基于PWM实现的，输入一段幅值相等的脉冲序列去等效正弦波，输出的脉冲时间宽度基本符合正弦变化。常用的采样方法有：自然采样法和规则采样法[^5]。
     
-  - 空间脉宽调制法，Space Vector Pulse Width Modulation (SVPWM)。这种技术是基于平均值等效原理，即在一个开关周期内通过对基本电压矢量加以组合，使其平均值与给定电压适量相等。可以理解为，在某个时刻，电压矢量旋转到某个区域中，可以由组成这个区域的两个相邻的非零矢量和零矢量在时间上的不同组合来得到。两个矢量的作用时间在一个采样周期内分多次施加，可以控制各个电压矢量的作用时间，使电压空间矢量接近圆轨迹旋转。通过逆变器的不同开关状态所产生的实际磁通去逼近理想磁通圆，并由两者的比较结果来决定逆变器的开关状态，从而形成PWM波形[^5]。<br>
+  - 空间脉宽调制法，Space Vector Pulse Width Modulation (SVPWM)。这种技术是基于平均值等效原理，即在一个开关周期内通过对基本电压矢量加以组合，使其平均值与给定电压适量相等。可以理解为，在某个时刻，电压矢量旋转到某个区域中，可以由组成这个区域的两个相邻的非零矢量和零矢量在时间上的不同组合来得到。两个矢量的作用时间在一个采样周期内分多次施加，可以控制各个电压矢量的作用时间，使电压空间矢量接近圆轨迹旋转。通过逆变器的不同开关状态所产生的实际磁通去逼近理想磁通圆，并由两者的比较结果来决定逆变器的开关状态，从而形成PWM波形[^6]。<br>
     在本文的实际应用就是控制三相逆变桥的六个IGBT元件瞬时开关的状态，产生特定的脉宽调制波，可以使电机获得理想圆形磁链轨迹，输出理想的正弦电流波形。
 
 逆变电路Inverter Circuit是可以把直流电变换为交流电的电路。根据逆变电路的电路形式与输出的交流信号，可将逆变电路分为全桥逆变电路，半桥逆变电路和三相桥式逆变电路。
@@ -129,7 +125,7 @@
   - 半桥逆变电路
     由两个开关串联组成，输出端位于两个开关的中点，由上下两个开关的开通/关断来决定输出的电压。半桥逆变电路配合两个分压电容，可以输出双端之间的高频交流电。开关旁一般需要并联续流二极管，以便在感性负载时起到续流作用。半桥逆变器配合正负双电压源，可以输出双端的完全交流/含有直流分量的交流以及完全直流信号。
   - 三相桥式逆变电路
-    三相桥式逆变电路类似于全桥逆变电路，但其中有三个桥臂，输出端的三端分别位于三组开关的中点，取两两之间的电压差就可以得到三相电所需的三个相电压。根据三组共六个开关的开通顺序，三相桥式逆变器可以得到一组幅值相等/频率相等/相位相差120°的三相电信号。[^6]
+    三相桥式逆变电路类似于全桥逆变电路，但其中有三个桥臂，输出端的三端分别位于三组开关的中点，取两两之间的电压差就可以得到三相电所需的三个相电压。根据三组共六个开关的开通顺序，三相桥式逆变器可以得到一组幅值相等/频率相等/相位相差120°的三相电信号。[^7]
 <hr>
 
 ## 2逆变器DSP控制部分
@@ -142,7 +138,7 @@
   - 使用TMS320F283xx DSP作为主控制器；
   - 功率器件的开关频率为5kHz，即中断周期为200μs。
 
-设计IGBT驱动电路的时候，需要考虑到信号发生电路，信号隔离电路和驱动电路的设计[^7]。<br>
+设计IGBT驱动电路的时候，需要考虑到信号发生电路，信号隔离电路和驱动电路的设计[^8]。<br>
 1)**信号发生电路**<br>
 IGBT一般需要15V的驱动电压，但是控制器能够提供的电压是3.3-5V，所以需要设计信号发生电路使电压满足设计需要。并且信号发生电路要**产生两路带死区互补的方波信号**，否则会造成IGBT的误导通。<br>
 2)**信号隔离电路**<br>
@@ -160,7 +156,7 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 
 ### 21电源
 
-设计供电电源电路的时候，需要考虑到隔离。供电电路为控制系统提供+15V，-15V和+5V的直流电压。设计时供电电路采用两个变压器，分别对控制保护部分和功率模块部分提供电源，其中给功率模块供电变压器的直流输出要分别绕线，不能有公共结点[^8]。
+设计供电电源电路的时候，需要考虑到隔离。供电电路为控制系统提供+15V，-15V和+5V的直流电压。设计时供电电路采用两个变压器，分别对控制保护部分和功率模块部分提供电源，其中给功率模块供电变压器的直流输出要分别绕线，不能有公共结点[^9]。
 
 ### 22PWM信号驱动电路
 
@@ -211,18 +207,20 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 
 [^1]: Zhao, Xiaokun, Baoquan Kou, Changchuang Huang, and Lu Zhang. 2022. "Optimization Design and Performance Analysis of a Reverse-Salient Permanent Magnet Synchronous Motor" Machines 10, no. 3: 204. https://doi.org/10.3390/machines10030204
 
-[^2]: https://ww2.mathworks.cn/solutions/electrification/clarke-and-park-transforms.html
+[^2]: https://zhuanlan.zhihu.com/p/256406416
 
-[^3]: https://blog.csdn.net/weixin_48005998/article/details/129597108?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&utm_relevant_index=12
+[^3]: https://ww2.mathworks.cn/solutions/electrification/clarke-and-park-transforms.html
 
-[^4]: https://blog.csdn.net/u010632165/article/details/110889621
+[^4]: https://blog.csdn.net/weixin_48005998/article/details/129597108?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-129597108-blog-89455075.235%5Ev38%5Epc_relevant_anti_t3&utm_relevant_index=12
 
-[^5]: https://blog.csdn.net/qlexcel/article/details/74787619
+[^5]: https://blog.csdn.net/u010632165/article/details/110889621
 
-[^6]: https://zh.wikipedia.org/zh-hans/%E9%80%86%E8%AE%8A%E5%99%A8
+[^6]: https://blog.csdn.net/qlexcel/article/details/74787619
 
-[^7]: https://blog.csdn.net/weixin_44586889/article/details/109734817
+[^7]: https://zh.wikipedia.org/zh-hans/%E9%80%86%E8%AE%8A%E5%99%A8
 
-[^8]: 殷健翔.(2021).基于TMS320F28379D的多电机同步控制策略研究(硕士学位论文,浙江大学).https://kns.cnki.net/kcms2/article/abstract?v=EeZTdI0aL7sEApdvxu7_eJdzvF5UeACxBHVVHwQYb-v2mjYsV5uY0zIVw6BjoFiLQNbu_StuNgwG95GelBflPLa_1nkvRc6mnWqlzehzIfygl22AAjFmP7GPZJmYHFuY69X5igd8qbg=&uniplatform=NZKPT&language=CHS
+[^8]: https://blog.csdn.net/weixin_44586889/article/details/109734817
+
+[^9]: 殷健翔.(2021).基于TMS320F28379D的多电机同步控制策略研究(硕士学位论文,浙江大学).https://kns.cnki.net/kcms2/article/abstract?v=EeZTdI0aL7sEApdvxu7_eJdzvF5UeACxBHVVHwQYb-v2mjYsV5uY0zIVw6BjoFiLQNbu_StuNgwG95GelBflPLa_1nkvRc6mnWqlzehzIfygl22AAjFmP7GPZJmYHFuY69X5igd8qbg=&uniplatform=NZKPT&language=CHS
 
 
