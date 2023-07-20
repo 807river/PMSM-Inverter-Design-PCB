@@ -57,15 +57,14 @@
   Figure 1中电机定子的三相绕组两两之间夹角为120°。</p>
 
   - <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101” width="200px" height="200px" />
- - ![abc坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101)
   <p align="center"> Figure 3 A-B-C坐标系</p>
 
-  - ![alpha-beta坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/6c9e272f-cf1b-4428-a4f6-bfd5fee88292)
+  - <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/6c9e272f-cf1b-4428-a4f6-bfd5fee88292” width="200px" height="200px" />
   <p align="center"> Figure 4 ɑ-β坐标系</p>
   
 如Figure 3和Figure 4所示，**A-B-C坐标系**和**ɑ-β坐标系**都是依据定子的三相绕组建立的，它们与永磁同步电机相对静止。
 
-  - ![dq坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/43932937-7d22-446f-beef-7bcdc6edf43d)
+ - <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/43932937-7d22-446f-beef-7bcdc6edf43d” width="200px" height="200px" />
   <p align="center"> Figure 5 d-q坐标系</p>
   
 而Figure 5所示的**d-q坐标系**是两相旋转坐标系，是基于转子建立的。d轴沿转子的磁极轴线，d轴与A轴的所夹锐角定义为角度θ，所以**d-q坐标系**与永磁同步电机相对转动。
