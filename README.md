@@ -98,7 +98,7 @@
 
 对永磁同步电机的控制都是为了获得好的调速控制性能。常见的控制方法有三种，它们分别是有：<br>
   
-  - 恒压频比控制又称变压变频控制，Variable Voltage Variable Frequency (VVVF)；
+  - **恒压频比控制又称变压变频控制，Variable Voltage Variable Frequency (VVVF)**<br>
     VVVF的原理是利用**”V/F=定值“**的原理，用开环控制的方法控制电机[^3]。<br>
       根据电磁感应原理，气隙磁通在定子绕组每相绕组中的感应电动势E_m可以表示为：
       <h3 align="center" >E_m=4.44*F_s*N_s*K_ns*ɸ_m </h3>
@@ -106,11 +106,11 @@
       F_s,N_s,K_ns为常值，则E_m与Fs成正比。
       可以粗略理解为，VVVF的基本控制原则是控制气隙磁通有效值ɸ_m恒定不变。<br>
       
-  - 磁场定向矢量控制，Field Oriented Control (FOC)；
+  - **磁场定向矢量控制，Field Oriented Control (FOC)**<br>
     FOC是用坐标变换将三相交流电的控制，转换为 **产生转矩的q轴电流** 和 **产生磁场的d轴电流** 的控制，实现转矩和励磁的独立控制[^4]。
      从Figure 3可知，
     
-  - 直接转矩控制，Direct Torque Control (DTC)。
+  - **直接转矩控制，Direct Torque Control (DTC)**<br>
     DTC是通过直接控制定子磁链来直接控制电机的电磁转矩。这种方法不需要转子位置信息和电机的转子参数，省去了复杂的旋转坐标变换。对于永磁同步电机来说，使用这种方法必须已知转子的初始位置。
 
 ### 15空间脉宽调制技术 PWM SPWM SVPWM
