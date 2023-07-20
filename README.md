@@ -56,6 +56,7 @@
 <p>为什么要针对永磁同步电机建立坐标系呢？是为了更精确的调速调频，为了研究精确的控制算法。<br>
   Figure 1中电机定子的三相绕组两两之间夹角为120°。</p>
 
+  - <p align="center"><img src="https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101” width="200px" height="200px" />
  - ![abc坐标系](https://github.com/807river/PMSM-Inverter-Design-PCB/assets/97770910/c03476b0-fcbe-4690-b8a5-d9c0abb7e101)
   <p align="center"> Figure 3 A-B-C坐标系</p>
 
