@@ -27,6 +27,7 @@
       <li><a href="#32Code-Composer-Studio">32Code Composer Studio</a></li>
     </ul>
   <li><a href="#4原理图绘制">4原理图绘制</a></li>
+  <li><a href="#5额外的背景知识“>5额外的背景知识</a></li>
   <li><a href="#Reference">Reference</a></li>
 </ul>
 <hr>
@@ -210,6 +211,9 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 <hr>
 
 ## 4原理图绘制
+
+## 5额外的背景知识
+
 
 <hr>
 
