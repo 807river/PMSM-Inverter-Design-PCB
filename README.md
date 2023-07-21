@@ -14,21 +14,21 @@
       <li><a href="#14几种常见的控制方法-VVVF-FOC-DTC">14几种常见的控制方法 VVVF FOC DTC</a></li>
       <li><a href="#15空间脉宽调制技术-PWM-SPWM-SVPWM">15空间脉宽调制技术 PWM SPWM SVPWM</a></li>
     </ul>
-      <li><a href="#2逆变器DSP控制部分">2逆变器DSP控制部分</a></li>
+    <li><a href="#2逆变器DSP控制部分">2逆变器DSP控制部分</a></li>
     <ul>
       <li><a href="#21电源">21电源</a></li>
       <li><a href="#22PWM信号驱动电路">22PWM信号驱动电路</a></li>
       <li><a href="#23检测电路">23检测电路</a></li>
       <li><a href="#24保护电路">24保护电路</a></li>
     </ul>
-      <li><a href="#3使用的软件">3使用的软件</a></li>
+    <li><a href="#3使用的软件">3使用的软件</a></li>
     <ul>
       <li><a href="#31Altium-Designer">31Altium Designer</a></li>
       <li><a href="#32Code-Composer-Studio">32Code Composer Studio</a></li>
     </ul>
-      <li><a href="#4原理图绘制">4原理图绘制</a></li>
-      <li><a href="#5额外的背景知识“>5额外的背景知识</a></li>
-      <li><a href="#Reference">Reference</a></li>
+    <li><a href="#4原理图绘制">4原理图绘制</a></li>
+    <li><a href="#5额外的背景知识">5额外的背景知识</a></li>
+    <li><a href="#Reference">Reference</a></li>
     </ul>
 <hr>
 
