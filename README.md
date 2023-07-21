@@ -26,10 +26,10 @@
       <li><a href="#31Altium-Designer">31Altium Designer</a></li>
       <li><a href="#32Code-Composer-Studio">32Code Composer Studio</a></li>
     </ul>
-  <li><a href="#4原理图绘制">4原理图绘制</a></li>
-  <li><a href="#5额外的背景知识“>5额外的背景知识</a></li>
-  <li><a href="#Reference">Reference</a></li>
-</ul>
+      <li><a href="#4原理图绘制">4原理图绘制</a></li>
+      <li><a href="#5额外的背景知识“>5额外的背景知识</a></li>
+      <li><a href="#Reference">Reference</a></li>
+    </ul>
 <hr>
 
 ## 1背景知识
