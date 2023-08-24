@@ -152,7 +152,7 @@
   - 使用TMS320F283xx DSP作为主控制器；
   - 功率器件的开关频率为5kHz，即中断周期为200μs。
 
-设计IGBT驱动电路的时候，需要考虑到信号发生电路，信号隔离电路和驱动电路的设计[^9]。<br>
+设计IGBT驱动电路的时候，需要考虑到信号发生电路，信号隔离电路和驱动电路的设计[^8]。<br>
 1)**信号发生电路**<br>
 IGBT一般需要15V的驱动电压，但是控制器能够提供的电压是3.3-5V，所以需要设计信号发生电路使电压满足设计需要。并且信号发生电路要**产生两路带死区互补的方波信号**，否则会造成IGBT的误导通。<br>
 2)**信号隔离电路**<br>
@@ -170,7 +170,7 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 
 ### 21电源
 
-设计供电电源电路的时候，需要考虑到隔离。供电电路为控制系统提供+15V，-15V和+5V的直流电压。设计时供电电路采用两个变压器，分别对控制保护部分和功率模块部分提供电源，其中给功率模块供电变压器的直流输出要分别绕线，不能有公共结点[^10]。
+设计供电电源电路的时候，需要考虑到隔离。供电电路为控制系统提供+15V，-15V和+5V的直流电压。设计时供电电路采用两个变压器，分别对控制保护部分和功率模块部分提供电源，其中给功率模块供电变压器的直流输出要分别绕线，不能有公共结点[^9]。
 
 ### 22PWM信号驱动电路
 
@@ -236,9 +236,13 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 
 <p>选择贴片元器件的时候，请注意封装型号。如果是手动焊接，电阻可以选R0805封装，引脚的尺寸可以焊接起来；若选择R0603或者R0402，电阻引脚尺寸太小，不方便焊接。同理，电容的封装型号也是以C0805为益。</p>
 
-<p>若前期选择用面包板搭建电路，选择元器件的时候，应该尽量符合电路中的设计值；若没有采购到某数值的元件，用数值差不多的元件暂时代替也可以，但应注意查手册上元件的重要参数。
+若前期选择用面包板搭建电路，选择元器件的时候，应该尽量符合电路中的设计值；若没有采购到某数值的元件，用数值差不多的元件暂时代替也可以，但应注意查手册上元件的重要参数。比如在选择二极管的时候，根据二极管所发挥的功能，需要看的重要参数不太一样[^10]。<br>
 
-比如在选择二极管的时候，根据二极管所发挥的功能，需要看的重要参数不太一样。</p>
+对于稳压二极管：因为它需要发挥的作用是稳压，即达到某种临界状态的时候（反向击穿电压前）具有高电阻的一种二极管。
+  一方面，它需要随着电流的增大，电压保持不变。所以在选择二极管的时候要考虑到流过稳压管的反向电流，通常情况下会在稳压二极管前串联一个限流电阻；
+  另一方面，稳压二极管选型的时候需要考虑到功率。若对输入最大为24V电压，要求输出5V/20mA，那么稳压二极管可以选5.1V的，功率大于0.1W的稳压二极管即可，IN4733或IN5231都行。
+
+
 ## Reference:
 
 [^1]: Zhao, Xiaokun, Baoquan Kou, Changchuang Huang, and Lu Zhang. 2022. "Optimization Design and Performance Analysis of a Reverse-Salient Permanent Magnet Synchronous Motor" Machines 10, no. 3: 204. https://doi.org/10.3390/machines10030204
@@ -255,8 +259,9 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 
 [^7]: https://blog.csdn.net/qlexcel/article/details/74787619
 
-[^9]: https://blog.csdn.net/weixin_44586889/article/details/109734817
+[^8]: https://blog.csdn.net/weixin_44586889/article/details/109734817
 
-[^10]: 殷健翔.(2021).基于TMS320F28379D的多电机同步控制策略研究(硕士学位论文,浙江大学).https://kns.cnki.net/kcms2/article/abstract?v=EeZTdI0aL7sEApdvxu7_eJdzvF5UeACxBHVVHwQYb-v2mjYsV5uY0zIVw6BjoFiLQNbu_StuNgwG95GelBflPLa_1nkvRc6mnWqlzehzIfygl22AAjFmP7GPZJmYHFuY69X5igd8qbg=&uniplatform=NZKPT&language=CHS
+[^9]: 殷健翔.(2021).基于TMS320F28379D的多电机同步控制策略研究(硕士学位论文,浙江大学).https://kns.cnki.net/kcms2/article/abstract?v=EeZTdI0aL7sEApdvxu7_eJdzvF5UeACxBHVVHwQYb-v2mjYsV5uY0zIVw6BjoFiLQNbu_StuNgwG95GelBflPLa_1nkvRc6mnWqlzehzIfygl22AAjFmP7GPZJmYHFuY69X5igd8qbg=&uniplatform=NZKPT&language=CHS
 
+[^10]: https://baijiahao.baidu.com/s?id=1599539117839787378&wfr=spider&for=pc
 
