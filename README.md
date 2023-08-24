@@ -28,6 +28,9 @@
     </ul>
     <li><a href="#4原理图绘制">4原理图绘制</a></li>
     <li><a href="#5额外的背景知识">5额外的背景知识</a></li>
+    <ul>
+      <li><a href="#51逆变器的应用场景">51逆变器的应用场景</a></li>
+      <li><a href="#52元器件选型">52元器件选型</a></li>
     <li><a href="#Reference">Reference</a></li>
     </ul>
 <hr>
@@ -184,6 +187,7 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 ### 31Altium Designer
     
 <p>Altium Designer (AD) is very helpful for drawing circuit diagrams. It could be got from https://www.altium.com/altium-designer.</p>
+绘图的时候需要注意线宽。高压侧用的线粗一些，低压侧的线可以正常宽度绘制。绘制过程中需要考虑到电气隔离。
 
 #### AD的简单使用
 
@@ -214,6 +218,8 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 
 ## 5额外的背景知识
 
+###51逆变器的应用场景
+
 逆变器广泛应用于光伏逆变器，不间断电源，和城市公共运输系统等。<br>
 **光伏逆变器**
 <p>光伏逆变器能够将光伏电池产生的直流电能转换为能够并网或直接使用的交流电能。光伏发电是极具发展潜力的可再生能源。随着光伏电池转换效率的提高，制造成本的降低，以及国家对光伏发电的大力支持，近年来光伏逆变器作为配套产品，也不断发展。</p>
@@ -226,6 +232,13 @@ MOS/IGBT具有较脆弱的承受短时过载能力，所以在应用的时候需
 
 <hr>
 
+###52元器件选型
+
+<p>选择贴片元器件的时候，请注意封装型号。如果是手动焊接，电阻可以选R0805封装，引脚的尺寸可以焊接起来；若选择R0603或者R0402，电阻引脚尺寸太小，不方便焊接。同理，电容的封装型号也是以C0805为益。</p>
+
+<p>若前期选择用面包板搭建电路，选择元器件的时候，应该尽量符合电路中的设计值；若没有采购到某数值的元件，用数值差不多的元件暂时代替也可以，但应注意查手册上元件的重要参数。
+
+比如在选择二极管的时候，根据二极管所发挥的功能，需要看的重要参数不太一样。</p>
 ## Reference:
 
 [^1]: Zhao, Xiaokun, Baoquan Kou, Changchuang Huang, and Lu Zhang. 2022. "Optimization Design and Performance Analysis of a Reverse-Salient Permanent Magnet Synchronous Motor" Machines 10, no. 3: 204. https://doi.org/10.3390/machines10030204
